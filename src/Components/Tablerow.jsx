@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { Edit } from "./Editpage";
 import '../styles/styles.css'
 
-export const Row = ({item,handleSave,handleDelete}) => {
+export const RowData = ({item,handleSave,handleDelete}) => {
     const [edit, setEdit] = React.useState(false);
 
 

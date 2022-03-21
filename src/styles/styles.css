@@ -1,0 +1,22 @@
+.btns{
+    margin-left: 80vw;
+    margin-bottom: 2vh;
+}
+.parentdiv{
+display: flex;
+vertical-align: center;
+margin: auto;
+width: 80vw;
+margin-top:2vh ;
+justify-content: space-around;
+}
+.inputedit{
+    height: 20px;
+    font-size: 16px;
+    letter-spacing: .4px;
+    text-shadow: inherit;
+    border-radius: 3px;
+
+
+
+}

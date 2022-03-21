@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { getTableData, setFilter } from "../Redux/action";
-import { Row } from "./Tablerow";
+import {RowData } from "./Tablerow";
 import Button from '@mui/material/Button';
 import '../styles/styles.css'
 
@@ -34,7 +34,7 @@ export const LandingPage = () => {
         <>
             {
                 tableData.map((el) => {
-                    return <Row handleSave={handleSave} handleDelete={handleDelete} key={el.id} item={el}/>
+                    return <RowData handleSave={handleSave} handleDelete={handleDelete} key={el.id} item={el}/>
                 })
             }
             <div className="btns" >
