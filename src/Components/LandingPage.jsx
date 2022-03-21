@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { getTableData, setFilter } from "../Redux/action";
 import {RowData } from "./Tablerow";
@@ -10,9 +10,9 @@ export const LandingPage = () => {
     const tableData = useSelector((state) => state.app.listdata);
     const [page, setPage] = useState(1);
 
-    React.useEffect(() => {
+    useEffect(() => {
         dispatch(getTableData(page));
-    }, [page]);
+    }, [page,dispatch]);
 
     const handleDelete = (id) => {
         let newList = tableData.filter((item) => id !== item.id);

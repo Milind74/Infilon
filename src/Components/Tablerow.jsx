@@ -11,7 +11,7 @@ export const RowData = ({item,handleSave,handleDelete}) => {
     
     useEffect(()=>{
         setEditName(item.first_name)
-    },[])
+    },[item.first_name])
 
     // console.log('edit name-------',editName)
     const handleEdit = () => {
