@@ -17,6 +17,19 @@ justify-content: space-around;
     text-shadow: inherit;
     border-radius: 3px;
 
+}
+img{
+    border-radius: 10px;
+    filter: grayscale(0.5);
+    box-shadow: 0 0 0;
+    transition: 400ms;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px black;
 
-
+}
+img:hover{
+    filter: grayscale(0.5);
+    box-shadow: 0 0 0;
+    transition: 400ms;
+    cursor: pointer;
 }
